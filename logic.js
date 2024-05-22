@@ -1,50 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Cards</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="wrapper">
-    <div class="product-main">
-      <h2 class="product-list">Product List</h2>
-      <div class="card-container" id="card-container"></div>
-    </div>
-    <div class="cart-main" id="shopping-div">
-      <div class="head-cart">
-        <h2 class="shopping-cart">Shopping Cart</h2>
-      </div>
-      <!-- Filter by price -->
-      <div class="filter-input">
-        <label for="price">Filter By Price:</label>
-        <input list="prices" id="price" name="price" placeholder="Select price range...">
-        <datalist id="prices">
-          <option value="$0 - $10">
-          <option value="$10 - $20">
-          <option value="$20 - $30">
-          <option value="$30 - $40">
-        </datalist>
-      </div> 
-      <!-- Sort by price -->
-      <div class="sort-by-price">
-        <label for="sort-price">Sort By Price:</label>
-        <select id="sort-price">
-          <option value="low-to-high">Low to High</option>
-          <option value="high-to-low">High to Low</option>
-        </select>
-      </div>
-      <div id="cart-items"></div>
-      <div class="btn">
-        <button type="reset" onclick="clearCart()">Clear Cart</button>
-      </div>
-      <div id="total-price"></div>
-      <div id="average-price"></div>
-    </div>
-  </div>
 
-  <script>
     const products = [
       { image: './HeadPhone1.jpeg', name: 'Product 1', price: 10 },
       { image: './HeadPhone2.jpeg', name: 'Product 2', price: 20 },
@@ -219,6 +173,3 @@
 
     // Display all products by default
     displayProducts(products);
-  </script>
-</body>
-</html>
