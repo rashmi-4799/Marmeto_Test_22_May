@@ -26,6 +26,7 @@ body {
   .card-container, #cart-items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
     margin-top: 20px;
   }
@@ -156,3 +157,37 @@ body {
     background: #c82333;
   }
   
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .wrapper {
+        flex-direction: column !important;
+        .product-main{
+            width: 95%;
+            margin-bottom: 16px;
+        }
+        .cart-main{
+            width: 95%;
+        }
+
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    .wrapper {
+        flex-direction: column !important;
+    }
+}
+@media  (max-width: 768px) {
+    .wrapper {
+        flex-direction: column !important;
+        .product-main{
+            width: 95%;
+            margin-bottom: 16px;
+            .card{
+                width: 70%;
+            }
+        }
+        .cart-main{
+            width: 95%;
+        }
+
+    }
+}
